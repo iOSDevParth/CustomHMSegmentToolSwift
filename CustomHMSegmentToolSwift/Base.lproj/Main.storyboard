@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomHMSegmentToolSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoC-t7-YNT">
+                                <rect key="frame" x="5" y="75" width="365" height="587"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJB-RP-9Dp">
+                                        <rect key="frame" x="132" y="243" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="NbR-o8-ov6"/>
+                                            <constraint firstAttribute="width" constant="100" id="eRp-zs-rmC"/>
+                                        </constraints>
+                                    </view>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVR-Xa-zKh">
+                                        <rect key="frame" x="158" y="278" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchCheckClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="WlS-1g-ShT"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SVR-Xa-zKh" firstAttribute="centerY" secondItem="FoC-t7-YNT" secondAttribute="centerY" id="NCB-Jt-Abi"/>
+                                    <constraint firstItem="kJB-RP-9Dp" firstAttribute="centerY" secondItem="FoC-t7-YNT" secondAttribute="centerY" id="Wj4-Zr-cnH"/>
+                                    <constraint firstItem="kJB-RP-9Dp" firstAttribute="centerX" secondItem="FoC-t7-YNT" secondAttribute="centerX" id="iXL-yj-Edz"/>
+                                    <constraint firstItem="SVR-Xa-zKh" firstAttribute="centerX" secondItem="FoC-t7-YNT" secondAttribute="centerX" id="oTo-TX-hLh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FoC-t7-YNT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="3ou-Lc-OrG"/>
+                            <constraint firstItem="FoC-t7-YNT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="M77-Gj-SvM"/>
+                            <constraint firstAttribute="trailing" secondItem="FoC-t7-YNT" secondAttribute="trailing" constant="5" id="uH5-Ez-aYp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoC-t7-YNT" secondAttribute="bottom" constant="5" id="yOM-qv-7eH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="FoC-t7-YNT" id="IXt-5g-LI7"/>
+                        <outlet property="switchCheck" destination="SVR-Xa-zKh" id="GuA-9R-GDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
